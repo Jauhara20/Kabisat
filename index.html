@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for (let tahun = 1600; tahun <= 2404; tahun += 4) {
+
+        //     if (tahun % 4 >= 1) {
+        //         console.log("Tahun " + tahun + " bukan tahun kabisat");
+        //     }
+        //     else if (tahun % 100 >= 1) {
+        //         console.log("Tahun " + tahun + " tahun kabisat");
+        //     }
+        //     else if (tahun % 400 >= 1) {
+        //         console.log("Tahun " + tahun + " bukan tahun kabisat");
+        //     }
+        //     else {
+        //         console.log("Tahun " + tahun + " tahun kabisat");
+        //     }
+        // }
+
+        // let tahun = 1500;
+        // while (tahun <= 2204) {
+
+        //     if (tahun % 4 >= 1) {
+        //         console.log("Tahun " + tahun + " bukan tahun kabisat");
+        //     }
+        //     else if (tahun % 100 >= 1) {
+        //         console.log("Tahun " + tahun + " tahun kabisat");
+        //     }
+        //     else if (tahun % 400 >= 1) {
+        //         console.log("Tahun " + tahun + " bukan tahun kabisat");
+        //     }
+        //     else {
+        //         console.log("Tahun " + tahun + " tahun kabisat");
+        //     }
+        //     tahun += 4
+        // }
+
+        let tahun = 1600;
+        do {
+            if (tahun % 4 == 0 && tahun % 100 != 0) {
+                console.log(tahun + 'tahun kabisat')
+            }
+            else if (tahun % 400 == 0) {
+                console.log(tahun + 'tahun kabisat')
+            }
+            else if (tahun % 100 == 0) {
+                console.log(tahun + 'bukan kabisat')
+            }
+            else {
+                console.log(tahun + 'bukan kabisat')
+            }
+            tahun++
+        } while (tahun <= 2024)
+    </script>
+</body>
+
+</html>
